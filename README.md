@@ -31,10 +31,12 @@
 
 2. Give each movie in `vm.moviesToWatch` an image. Make a button in the view for the user to change the background. When the user clicks the button, set the app's background to a random movie image from `vm.moviesToWatch`. Every time the user clicks the button, they should see a different background image.
 
+<!--
 ## Submission
 
 * As you make code changes, frequently commit and push to GitHub.
 * Once you've finished the assignment and pushed your work to GitHub, make a pull request from your fork to the original repo.
+-->
 
 ## Optional Practice
 
