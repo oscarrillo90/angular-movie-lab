@@ -4,12 +4,11 @@
 
 ## Getting Started
 
-1. Fork this repo, and clone it into your `develop` folder on your local machine.
-2. Change directories into `intro-angular-lab`, and follow the instructions from this morning's module to set up a new Angular app. You will need:
+1. Make a new directory called `angular-movie-lab`, change into that directory, and follow [these instructions](https://github.com/SF-WDI-LABS/intro-angular#setting-up-an-angular-app) to set up a new Angular app. You will need:
 	* `index.html` with links to the Angular CDN and `app.js`.
 	* `ng-app` and `ng-controller` directives in the HTML.
 	* `app.js` that initializes your Angular app and adds a controller.
-3. Run `budo app.js --open` from your Terminal to start your server and open your app in the browser.
+3. Open your index.html file in the browser.
 4. Implement solutions to the following challenges. Refer to the [solution branch](https://github.com/SF-WDI-LABS/intro-angular-lab/tree/solution) for guidance.
 
 ## Challenges
