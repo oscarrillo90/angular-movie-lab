@@ -4,12 +4,18 @@
 
 ## Getting Started
 
-1. Fork this repo, and clone it into your `develop` folder on your local machine.
+1. Fork this repo, and clone it into your `wdi` folder on your local machine.
 2. Change directories into `intro-angular-lab`, and follow the instructions from this morning's module to set up a new Angular app. You will need:
 	* `index.html` with links to the Angular CDN and `app.js`.
 	* `ng-app` and `ng-controller` directives in the HTML.
 	* `app.js` that initializes your Angular app and adds a controller.
-3. Run `budo app.js --open` from your Terminal to start your server and open your app in the browser.
+	
+3. Install a simple server called budo by running the following in your terminal:
+	```bash
+	$ npm install --g budo
+	```
+	Run `budo app.js --open` from your Terminal to start your server and open your app in the browser.
+
 4. Implement solutions to the following challenges. Refer to the [solution branch](https://github.com/sf-wdi-25/intro-angular-lab/tree/solution) for guidance.
 
 ## Challenges
