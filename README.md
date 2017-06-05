@@ -4,18 +4,17 @@
 
 ## Getting Started
 
-1. Make a new directory called `angular-movie-lab`, change into that directory, and use sample code and/or [these overview of steps](https://github.com/SF-WDI-LABS/intro-angular#setting-up-an-angular-app) to set up a new Angular app. You will need:
-	* `index.html` with links to an **Angular 1** CDN and `app.js`.
+1. Fork this repo, and clone it into your `develop` folder on your local machine.
+2. Change directories into `intro-angular-lab`, and follow the instructions from this morning's module to set up a new Angular app. You will need:
+	* `index.html` with links to the Angular CDN and `app.js`.
 	* `ng-app` and `ng-controller` directives in the HTML.
-	* `app.js` that initializes your Angular app module and adds a controller.
-3. Open your index.html file in the browser.
-4. Implement solutions to the following challenges. Refer to the [solution branch](https://github.com/SF-WDI-LABS/angular-movie-lab/tree/solution) for guidance.
+	* `app.js` that initializes your Angular app and adds a controller.
+3. Run `budo app.js --open` from your Terminal to start your server and open your app in the browser.
+4. Implement solutions to the following challenges. Refer to the [solution branch](https://github.com/sf-wdi-25/intro-angular-lab/tree/solution) for guidance.
 
 ## Challenges
 
-1. Inside your Angular controller, create an array of objects `vm.moviesToWatch`. Add a few movies -- each movie should be an object with at least a `title` key.
-
-1. Use the `ngRepeat` directive to iterate over your list of movies and display them in the view.
+1. Inside your Angular controller, create an array of objects `vm.moviesToWatch`, and use the `ngRepeat` directive to iterate over your list of movies and display them in the view.
 
 2. Use the `orderBy` filter to sort the list of movies by title in descending order.
 
@@ -33,16 +32,15 @@
 
 2. Give each movie in `vm.moviesToWatch` an image. Make a button in the view for the user to change the background. When the user clicks the button, set the app's background to a random movie image from `vm.moviesToWatch`. Every time the user clicks the button, they should see a different background image.
 
-<!--
 ## Submission
 
 * As you make code changes, frequently commit and push to GitHub.
 * Once you've finished the assignment and pushed your work to GitHub, make a pull request from your fork to the original repo.
--->
 
 ## Optional Practice
 
 * <a href="https://www.codeschool.com/courses/shaping-up-with-angular-js" target="_blank">Shaping up with Angular.js - Code School Tutorial</a>
+* [Custom Directives Reading](custom-directives.md)
 
 ## Resources
 
