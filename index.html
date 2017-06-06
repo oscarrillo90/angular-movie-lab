@@ -17,8 +17,29 @@
 
     <title>Intro Angular</title>
   </head>
-  <body>
-    <div class="container" ng-controller="MovieCtrl as movies">
+  <body ng-controller="MovieCtrl as movies">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+        <!-- show all moviesToWatch -->
+        <hr>
+
+          <div class="panel panel-default">
+
+            <ul class="list-group">
+            <!-- code for one movie -->
+              <li data-ng-repeat="movie in movies.moviesToWatch | orderBy:'title'" class="list-group-item">
+                <p class="list-group-item-text">
+
+                <!-- movie title with conditional class -->
+                  <span data-ng-class="{watched: movie.watched}">{{movie.title}}</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
