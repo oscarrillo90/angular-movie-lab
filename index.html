@@ -48,6 +48,15 @@
 
                 <!-- movie title with conditional class -->
                 <span data-ng-class="{watched: movie.watched}">{{movie.title}}</span>
+
+                <li class="list-group-item">
+                  <p class="list-group-item-text">
+                    <a href="#" data-ng-click="movies.toggleMovieLimit()">
+                      Show {{movies.movieLimit ? "More" : "Less"}}
+                    </a>
+                  </p>
+                </li>
+
             </div>
           </div>
         </div>

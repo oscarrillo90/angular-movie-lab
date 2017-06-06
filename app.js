@@ -44,4 +44,20 @@ function MovieCtrl () {
       vm.moviesToWatch.push(newMovie);
     };
 
+    vm.movieLimit = 5;
+    vm.toggleMovieLimit = function() {
+      if (vm.movieLimit) {
+        vm.movieLimit = false;
+      } else {
+        vm.movieLimit = 5;
+      }
+    };
+
+    vm.markWatched = function (movie) {
+      movie.watched = (movie.watched ? false : true);
+    }
+
+
+console.log(vm);
+
 };
