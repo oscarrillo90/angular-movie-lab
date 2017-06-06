@@ -17,26 +17,28 @@
 
     <title>Intro Angular</title>
   </head>
-  <body ng-controller="MovieCtrl as movies">
+  <body ng-controller="MovieCtrl as movies" data-ng-style="movies.style">
   <div class="container">
     <div class="row">
     <div class="col-md-6 col-md-offset-3">
 
-        <!-- show all moviesToWatch -->
+      <!-- show all moviesToWatch -->
+      <div data-ng-if="movies.moviesToWatch.length > 0">
         <hr>
-
-          <div class="panel panel-default">
-
-            <ul class="list-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              {{movies.moviesToWatch.length}} <spandata-ng-pluralize count="movies.moviesToWatch.length" when="{'1': 'Movie', 'other': 'Movies'}"></span> to Watch
+            </h3>
+          </div>
+          <ul class="list-group">
             <!-- code for one movie -->
-              <li data-ng-repeat="movie in movies.moviesToWatch | orderBy:'title'" class="list-group-item">
-                <p class="list-group-item-text">
+            <li data-ng-repeat="movie in movies.moviesToWatch | orderBy:'title' | limitTo: movies.movieLimit" class="list-group-item">
+              <p class="list-group-item-text">
 
                 <!-- movie title with conditional class -->
-                  <span data-ng-class="{watched: movie.watched}">{{movie.title}}</span>
-                </p>
-              </li>
-            </ul>
+                <span data-ng-class="{watched: movie.watched}">{{movie.title}}</span>
+            </div>
           </div>
         </div>
       </div>
