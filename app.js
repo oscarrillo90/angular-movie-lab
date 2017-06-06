@@ -44,6 +44,12 @@ function MovieCtrl () {
       vm.moviesToWatch.push(newMovie);
     };
 
+    vm.deleteMovie = function (movie) {
+      var movieIndex = vm.moviesToWatch.indexOf(movie);
+      vm.moviesToWatch .splice(movieIndex, 1);
+    };
+
+
     vm.movieLimit = 5;
     vm.toggleMovieLimit = function() {
       if (vm.movieLimit) {

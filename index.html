@@ -49,6 +49,12 @@
                 <!-- movie title with conditional class -->
                 <span data-ng-class="{watched: movie.watched}">{{movie.title}}</span>
 
+                <!-- icons to mark as watched and delete -->
+                  <span class="pull-right">
+                    <a href="#" data-ng-click="movies.markWatched(movie)"><i class="glyphicon" data-ng-class="{'glyphicon-check': movie.watched, 'glyphicon-unchecked': !movie.watched}"></i></a>
+                    <a href="#" data-ng-click="movies.deleteMovie(movie)"><i class="glyphicon glyphicon-remove-circle"></i></a>
+                  </span>
+
                 <li class="list-group-item">
                   <p class="list-group-item-text">
                     <a href="#" data-ng-click="movies.toggleMovieLimit()">
